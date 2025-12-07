@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática II - CEPJC</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-robot"></i> Matemática II</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="home">
+        <div class="container">
+            
+            <h1>Programação - A Analogia dos Códigos</h1>
+            
+            <div class="hero-credits">
+                Site projetado para fins de estudo por <strong>Vinicius Gabriel Sarraff</strong>, do 3º ano B de 2025 - Colégio Estadual Professor Júlio César - Professor Jey Marinho de Albuquerque<br>
+                <span style="font-size: 0.9em; opacity: 0.8;">(1º Colocado no concurso do Agrinho do Núcleo Regional de Irati-PR)</span>
+            </div>
+
+            <a href="#features" class="btn btn-primary btn-lg btn-hero">Ver Jogos</a>
+
+            <div class="project-carousel-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <a class="demo-preview-card demo-preview-card-link" data-bs-toggle="modal" data-bs-target="#geniusModal">
+                                <div class="image-container">
+                                    <span class="badge-overlay">JOGUE AGORA</span>
+                                    <div class="demo-image-placeholder"><i class="bi bi-palette"></i></div>
+                                </div>
+                                <div class="demo-caption">
+                                    <h3>Demo 1: Jogo da Velha</h3>
+                                    <button class="btn btn-card-play">Jogar Agora <i class="bi bi-play-fill"></i></button>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a class="demo-preview-card demo-preview-card-link" data-bs-toggle="modal" data-bs-target="#pongModal">
+                                <div class="image-container">
+                                    <span class="badge-overlay">JOGUE AGORA</span>
+                                                                     <div class="demo-image-placeholder"><i class="bi bi-grid-3x3"></i></div>
+                                </div>
+                                <div class="demo-caption">
+                                    <h3>Demo 2: Pong</h3>
+                                    <button class="btn btn-card-play">Jogar Agora <i class="bi bi-play-fill"></i></button>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a class="demo-preview-card demo-preview-card-link" data-bs-toggle="modal" data-bs-target="#codepenModal">
+                                <div class="image-container">
+                                    <span class="badge-overlay">JOGUE AGORA</span>
+                                    <div class="demo-image-placeholder"><i class="bi bi-grid-3x3"></i></div>
+                                </div>
+                                <div class="demo-caption">
+                                    <h3>Demo 3: Pedra, Papel e Tesoura</h3>
+                                    <button class="btn btn-card-play">Jogar Agora <i class="bi bi-play-fill"></i></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="demo-preview-card demo-preview-card-link" data-bs-toggle="modal" data-bs-target="#demo4Modal">
+                                <div class="image-container">
+                                    <span class="badge-overlay">JOGUE AGORA</span>
+                                    <div class="demo-image-placeholder"><i class="bi bi-joystick"></i></div>
+                                </div>
+                                <div class="demo-caption">
+                                    <h3>Demo 4: Jogo da Kelly</h3>
+                                    <button class="btn btn-card-play">Jogar Agora <i class="bi bi-play-fill"></i></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="demo-preview-card demo-preview-card-link" data-bs-toggle="modal" data-bs-target="#demo5Modal">
+                                <div class="image-container">
+                                    <span class="badge-overlay">JOGUE AGORA</span>
+                                    <div class="demo-image-placeholder"><i class="bi bi-puzzle"></i></div>
+                                </div>
+                                <div class="demo-caption">
+                                    <h3>Demo 5: Jogo da Labelly</h3>
+                                    <button class="btn btn-card-play">Jogar Agora <i class="bi bi-play-fill"></i></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="demo-preview-card demo-preview-card-link" data-bs-toggle="modal" data-bs-target="#demo6Modal">
+                                <div class="image-container">
+                                    <span class="badge-overlay">JOGUE AGORA</span>
+                                    <div class="demo-image-placeholder"><i class="bi bi-dice-5"></i></div>
+                                </div>
+                                <div class="demo-caption">
+                                    <h3>Demo 6: Jogo da Memória</h3>
+                                    <button class="btn btn-card-play">Jogar Agora <i class="bi bi-play-fill"></i></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="demo-preview-card demo-preview-card-link" data-bs-toggle="modal" data-bs-target="#demo7Modal">
+                                <div class="image-container">
+                                    <span class="badge-overlay">JOGUE AGORA</span>
+                                    <div class="demo-image-placeholder"><i class="bi bi-controller"></i></div>
+                                </div>
+                                <div class="demo-caption">
+                                    <h3>Demo 7: Jogo do Rhuan</h3>
+                                    <button class="btn btn-card-play">Jogar Agora <i class="bi bi-play-fill"></i></button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            
+        </div> </header>
+
+    <main>
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title">Por que aprender Programação?</h2>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card animate-on-scroll">
+                            <div class="feature-icon"><i class="bi bi-lightbulb"></i></div>
+                            <h3>Raciocínio Lógico</h3>
+                            <p>A programação estimula o pensamento estruturado e a capacidade de resolver problemas complexos das exatas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.1s;">
+                            <div class="feature-icon"><i class="bi bi-code-square"></i></div>
+                            <h3>Criação de Jogos</h3>
+                            <p>Não apenas jogue, crie! Aprenda a matemática e a lógica por trás dos games e dê vida às suas ideias.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card animate-on-scroll" style="transition-delay: 0.2s;">
+                            <div class="feature-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                            <h3>Carreira no Futuro</h3>
+                            <p>Domine a linguagem do século XXI e abra portas para carreiras inovadoras no mercado de tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-4 mt-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card animate-on-scroll" style="transition-delay: 0.3s;">
+                            <h3>3º Ano B</h3>
+                            <p>Turma 2025</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card animate-on-scroll" style="transition-delay: 0.4s;">
+                            <h3>Competições</h3>
+                            <p>Regionais</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card animate-on-scroll" style="transition-delay: 0.5s;">
+                            <h3>100%</h3>
+                            <p>Código Aberto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="geniusModal" tabindex="-1" aria-labelledby="geniusModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="geniusModalLabel">Demo: Genius (Simon Says)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="height: 600px; padding: 0;">
+                    <iframe id="geniusGameFrame" 
+                            data-src="https://codepen.io/ERIKI-KAIKI-MARTINS/embed/bNEyQaV?default-tab=result" 
+                            src="" 
+                            style="width: 100%; height: 100%; border: 0;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pongModal" tabindex="-1" aria-labelledby="pongModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pongModalLabel">Demo: Pong (Mova o mouse)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center" style="padding: 1rem;">
+                    <canvas id="pongGame"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="codepenModal" tabindex="-1" aria-labelledby="codepenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="codepenModalLabel">Demo: Jogo da Velha</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="height: 600px; padding: 0;">
+                    <iframe id="codepenGameFrame" 
+                            data-src="https://codepen.io/EMERSON-PEREIRA-STRONA/embed/yyONQER?authuser=0&default-tab=result" 
+                            src="" 
+                            style="width: 100%; height: 100%; border: 0;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="demo4Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Demo 4: Jogo da Kelly</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="height: 600px; padding: 0;">
+                    <iframe id="frameDemo4" 
+                            data-src="https://codepen.io/KELLY-DAIANA-PADILHA-DE-LARA/embed/azdrzJg?default-tab=result" 
+                            src="" 
+                            style="width: 100%; height: 100%; border: 0;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="demo5Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Demo 5: Jogo da Labelly</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="height: 600px; padding: 0;">
+                    <iframe id="frameDemo5" 
+                            data-src="https://codepen.io/LABELLY-FELDE-KLIMIONT-DOS-SANTOS/embed/pvgOLdJ?default-tab=result" 
+                            src="" 
+                            style="width: 100%; height: 100%; border: 0;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="demo6Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Demo 6: Pedra, Papel e Tesoura</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="height: 600px; padding: 0;">
+                    <iframe id="frameDemo6" 
+                            data-src="https://codepen.io/NICOLAS-KAUA-DOS-SANTOS/embed/KwVLwrb?default-tab=result" 
+                            src="" 
+                            style="width: 100%; height: 100%; border: 0;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="demo7Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Demo 7: Jogo do Rhuan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="height: 600px; padding: 0;">
+                    <iframe id="frameDemo7" 
+                            data-src="https://codepen.io/RHUAN-SANTOS-RIBEIRO/embed/EaPzaex?default-tab=result" 
+                            src="" 
+                            style="width: 100%; height: 100%; border: 0;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // 1. INICIALIZAÇÃO DO SWIPER
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false, 
+                    pauseOnMouseEnter: true
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    768: { slidesPerView: 2, spaceBetween: 30 },
+                    992: { slidesPerView: 3, spaceBetween: 30 }
+                }
+            });
+            
+            // 2. Animação de Scroll (FadeIn)
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElements.forEach(el => { observer.observe(el); });
+
+            // ----------------------------------------------------
+            // 3. LÓGICA DE INATIVIDADE E ROLAGEM AUTOMÁTICA
+            // ----------------------------------------------------
+            
+            let idleTime = 0;
+            let isKioskMode = false;
+            let kioskTimeout;
+            
+            const sections = ['home', 'features']; 
+            let currentSectionIndex = 0;
+
+            setInterval(timerIncrement, 1000);
+
+            const resetEvents = ['mousemove', 'keypress', 'scroll', 'click', 'touchstart'];
+            resetEvents.forEach(evt => {
+                document.addEventListener(evt, resetTimer);
+            });
+
+            function timerIncrement() {
+                idleTime++;
+                if (idleTime >= 60 && !isKioskMode) { // 60 segundos
+                    startKioskMode();
+                }
+            }
+
+            function resetTimer() {
+                idleTime = 0;
+                if (isKioskMode) {
+                    stopKioskMode();
+                }
+            }
+
+            function startKioskMode() {
+                isKioskMode = true;
+                runKioskLoop();
+            }
+
+            function stopKioskMode() {
+                isKioskMode = false;
+                clearTimeout(kioskTimeout);
+            }
+
+            function runKioskLoop() {
+                if (!isKioskMode) return;
+
+                const currentSectionId = sections[currentSectionIndex];
+                const sectionElement = document.getElementById(currentSectionId);
+
+                if (sectionElement) {
+                    sectionElement.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // 10 Segundos em cada seção
+                let waitTime = 10000;
+
+                kioskTimeout = setTimeout(() => {
+                    currentSectionIndex++;
+                    if (currentSectionIndex >= sections.length) {
+                        currentSectionIndex = 0; 
+                    }
+                    runKioskLoop();
+                }, waitTime);
+            }
+
+            // ----------------------------------------------------
+            // 4. LÓGICA IFRAMES (MODAIS)
+            // ----------------------------------------------------
+            
+            function setupIframeModal(modalId, iframeId) {
+                const modal = document.getElementById(modalId);
+                const iframe = document.getElementById(iframeId);
+                if (!modal || !iframe) return;
+
+                const srcUrl = iframe.dataset.src;
+
+                modal.addEventListener('shown.bs.modal', () => {
+                    resetTimer();
+                    iframe.src = srcUrl; 
+                });
+
+                modal.addEventListener('hide.bs.modal', () => {
+                    iframe.src = ""; 
+                });
+            }
+
+            setupIframeModal('geniusModal', 'geniusGameFrame');    
+            setupIframeModal('codepenModal', 'codepenGameFrame');  
+            setupIframeModal('demo4Modal', 'frameDemo4');          
+            setupIframeModal('demo5Modal', 'frameDemo5');          
+            setupIframeModal('demo6Modal', 'frameDemo6');          
+            setupIframeModal('demo7Modal', 'frameDemo7');          
+
+            // ----------------------------------------------------
+            // 5. LÓGICA DO JOGO PONG (RESTAURADA)
+            // ----------------------------------------------------
+            const pongCanvas = document.getElementById('pongGame');
+            const pongContext = pongCanvas.getContext('2d');
+
+            pongCanvas.width = 750;
+            pongCanvas.height = 450; 
+
+            let pongGameRunning = false; 
+            let pongAnimationFrameId; 
+
+            const ball = { x: pongCanvas.width / 2, y: pongCanvas.height / 2, radius: 10, speed: 6, dx: 6, dy: -6 };
+            const player = { x: 10, y: (pongCanvas.height - 100) / 2, width: 10, height: 100, score: 0 };
+            const computer = { x: pongCanvas.width - 20, y: (pongCanvas.height - 100) / 2, width: 10, height: 100, score: 0 };
+
+            function drawRect(x, y, w, h, color) { pongContext.fillStyle = color; pongContext.fillRect(x, y, w, h); }
+            function drawCircle(x, y, r, color) { pongContext.fillStyle = color; pongContext.beginPath(); pongContext.arc(x, y, r, 0, Math.PI * 2, false); pongContext.closePath(); pongContext.fill(); }
+            function drawNet() { pongContext.beginPath(); pongContext.setLineDash([10, 10]); pongContext.moveTo(pongCanvas.width / 2, 0); pongContext.lineTo(pongCanvas.width / 2, pongCanvas.height); pongContext.strokeStyle = 'var(--text-muted)'; pongContext.stroke(); pongContext.setLineDash([]); }
+            function drawText(text, x, y, color) { pongContext.fillStyle = color; pongContext.font = "50px 'Poppins'"; pongContext.textAlign = "center"; pongContext.fillText(text, x, y); }
+
+            function renderPong() {
+                drawRect(0, 0, pongCanvas.width, pongCanvas.height, "#0F0A1F");
+                drawNet();
+                drawText(player.score, pongCanvas.width / 4, 60, 'var(--primary)');
+                drawText(computer.score, (3 * pongCanvas.width) / 4, 60, 'var(--primary)');
+                drawRect(player.x, player.y, player.width, player.height, 'var(--text-light)');
+                drawRect(computer.x, computer.y, computer.width, computer.height, 'var(--text-light)');
+                drawCircle(ball.x, ball.y, ball.radius, 'var(--text-light)');
+            }
+
+            function updatePong() {
+                ball.x += ball.dx;
+                ball.y += ball.dy;
+                if (ball.y + ball.radius > pongCanvas.height || ball.y - ball.radius < 0) { ball.dy = -ball.dy; }
+                if (ball.x + ball.radius > pongCanvas.width) { player.score++; resetBall(); } else if (ball.x - ball.radius < 0) { computer.score++; resetBall(); }
+                let paddle = (ball.x < pongCanvas.width / 2) ? player : computer;
+                if (collision(ball, paddle)) {
+                    let collidePoint = (ball.y - (paddle.y + paddle.height / 2));
+                    collidePoint = collidePoint / (paddle.height / 2);
+                    let angleRad = (Math.PI / 4) * collidePoint;
+                    let direction = (ball.x < pongCanvas.width / 2) ? 1 : -1;
+                    ball.dx = direction * ball.speed * Math.cos(angleRad);
+                    ball.dy = ball.speed * Math.sin(angleRad);
+                }
+                computer.y += (ball.y - (computer.y + computer.height / 2)) * 0.1; 
+                if(computer.y < 0) computer.y = 0;
+                if(computer.y + computer.height > pongCanvas.height) computer.y = pongCanvas.height - computer.height;
+            }
+
+            function collision(b, p) {
+                p.top = p.y; p.bottom = p.y + p.height; p.left = p.x; p.right = p.x + p.width;
+                b.top = b.y - b.radius; b.bottom = b.y + b.radius; b.left = b.x - b.radius; b.right = b.x + b.radius;
+                return p.left < b.right && p.top < b.bottom && p.right > b.left && p.bottom > b.top;
+            }
+
+            function resetBall() { ball.x = pongCanvas.width / 2; ball.y = pongCanvas.height / 2; ball.speed = 6; ball.dx = -ball.dx; }
+            function pongLoop() { if (!pongGameRunning) return; updatePong(); renderPong(); pongAnimationFrameId = requestAnimationFrame(pongLoop); }
+
+            pongCanvas.addEventListener('mousemove', (evt) => {
+                let rect = pongCanvas.getBoundingClientRect();
+                let newY = evt.clientY - rect.top - (player.height / 2);
+                if(newY < 0) newY = 0;
+                if(newY + player.height > pongCanvas.height) newY = pongCanvas.height - player.height;
+                player.y = newY;
+            });
+            
+            const pongModal = document.getElementById('pongModal');
+            pongModal.addEventListener('shown.bs.modal', () => {
+                resetTimer(); // Para o Kiosk
+                pongGameRunning = true; resetBall(); player.score = 0; computer.score = 0; pongLoop(); 
+            });
+            pongModal.addEventListener('hide.bs.modal', () => {
+                pongGameRunning = false; if (pongAnimationFrameId) { cancelAnimationFrame(pongAnimationFrameId); }
+            });
+
+        }); // Fim do DOMContentLoaded
+    </script>
+
+</body>
+</html>
